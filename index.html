@@ -12,7 +12,18 @@
     <div id="root">
      
     </div>
-    <script src="/src/fullScreen.js"></script>
+    <script>
+      function active(element) {
+            if (element.requestFullscreen) {
+              element.requestFullscreen();
+            }
+          }
+          function deactive() {
+            if (document.exitFullscreen) {
+              document.exitFullscreen();
+            }
+          }
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
