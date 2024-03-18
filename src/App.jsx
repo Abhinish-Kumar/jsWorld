@@ -1,4 +1,5 @@
-import './App.css'
+
+
 import React from 'react'
 import Home from './Home'
 import User from './User'
@@ -25,11 +26,13 @@ function App() {
       </nav>
       <div id='box'>
       <Routes>
+   
       <Route path="/home" element={<Home />} />
       <Route path="/user" element={<User />} />
       <Route path="/dom" element={<Dom/>} />
     </Routes>
-      </div>
+   
+    </div>
 
       </>
   )
